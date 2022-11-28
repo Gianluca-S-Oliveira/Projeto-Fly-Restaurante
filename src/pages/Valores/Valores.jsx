@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import {motion} from 'framer-motion'
+import ReactWhatsapp from 'react-whatsapp';
 import './valores.css'
 const Valores = ( ) =>{
   // ve se o o compoennte esta na vista
@@ -29,7 +30,7 @@ const animation = useAnimation();
 
     return(
         <article ref={ref} id="valores">
-         <section className="we-offer-area text-center bg-green-900 font-['Righteous'] mt-[-3vh] ">
+         <section className="we-offer-area text-center bg-green-900 font-['Righteous']  ">
   <motion.div 
   animate={animation}
   className="container">
@@ -54,6 +55,8 @@ const animation = useAnimation();
           <p className="p-4 ">
           Trabalhamos com produtos de agricultura familiar e incentivamos a produção de 
           comida local.
+       
+    
           </p>
         </div>
       </div>

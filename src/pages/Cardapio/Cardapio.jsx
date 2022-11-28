@@ -6,9 +6,12 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import {motion} from "framer-motion"
+import ReactWhatsapp from 'react-whatsapp';
+
 
 import './cardapio.css';
-const Cardapio = ( ) =>{
+
+const Cardapio = () =>{
   
   const {ref, inView} = useInView();
   const animation = useAnimation();
@@ -26,7 +29,7 @@ const Cardapio = ( ) =>{
         animation.start({x:'100vw'})
       }
     }, [inView])
-    
+
 
     return(
       <article ref={ref} >
@@ -71,7 +74,11 @@ src="../../images/salada.png"
   </div>
 
     </div>
-      <Button className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] rounded-2xl  textos"  bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de uma Salada por favor!" 
+    className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] rounded-2xl  py-2 hover:bg-green-800 textos">
+   Comprar
+   </ReactWhatsapp> 
+     
 </div>
 
 </Card.Body>
@@ -116,7 +123,11 @@ src="../../images/burg.png"
   </div> 
 
     </div>
-      <Button className=" w-[80%] mb-3 text-white textos bg-green-700 rounded-2xl  md:w-[50%]" bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de um Hamburguer Vegano por favor!" 
+    className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] py-2 hover:bg-green-800 rounded-2xl  textos">
+   COMPRAR
+   </ReactWhatsapp> 
+     
 </div>
 
 </Card.Body>
@@ -160,7 +171,10 @@ src="../../images/macarrao.png"
   </div>
 
     </div>
-      <Button className=" w-[80%] mb-3 textos text-white bg-green-700 md:w-[50%] rounded-2xl "  bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de um Macarrão Vegano por favor!" 
+    className=" w-[80%] mb-3 py-2 hover:bg-green-800 text-white bg-green-700 md:w-[50%] rounded-2xl  textos">
+   COMPRAR
+   </ReactWhatsapp> 
 </div>
 
 </Card.Body>
@@ -204,7 +218,10 @@ src="../../images/hotdog.png"
   </div>
 
     </div>
-      <Button className=" w-[80%] mb-3 text-white textos rounded-2xl  bg-green-700 md:w-[50%]" bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de um Hot Dog Vegano por favor!" 
+    className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] rounded-2xl  py-2 hover:bg-green-800 textos">
+   COMPRAR
+   </ReactWhatsapp> 
 </div>
 
 </Card.Body>
@@ -248,7 +265,10 @@ src="../../images/panqueca.png"
   </div>
 
     </div>
-      <Button className=" w-[80%] mb-3 text-white textos rounded-2xl  bg-green-700 md:w-[50%]"  bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de uma Panqueca de Espinafre por favor!" 
+    className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] py-2 hover:bg-green-800 rounded-2xl  textos">
+   COMPRAR
+   </ReactWhatsapp> 
 </div>
 
 </Card.Body>
@@ -292,7 +312,10 @@ src="../../images/pizza.png"
   </div>
 
     </div>
-      <Button className=" w-[80%] mb-3 text-white bg-green-700 rounded-2xl textos md:w-[50%]"  bg="success" variant="success">COMPRAR</Button>
+    <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de uma Pizza Vegana por favor!" 
+    className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] py-2 hover:bg-green-800 rounded-2xl  textos">
+   COMPRAR
+   </ReactWhatsapp> 
 </div>
 
 </Card.Body>
