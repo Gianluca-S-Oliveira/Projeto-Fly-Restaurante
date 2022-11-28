@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+}
+.money{
+   font-family: 'Abril Fatface', cursive;
+   margin-top: 10px;
+}
+.textos{
+   font-family: 'Faustina', serif;
+}
+.imgg{
+    object-fit: cover;
+ width: 90%;
+ height: 100%;
+
+ /* transform: rotate(50deg); */
+
+ position: absolute;
+ z-index: -1; 
+ filter: brightness(100%);
+
+ }
+ .radio{
+ background-color: red;
+ width: 4vw;
+
+ height: 25px; 
+ }
+ 
+ .radio:hover{
+    cursor: pointer;
+ }
+ .fundo{
+ background-image: url('https://media.istockphoto.com/id/1254716470/vector/refracted-curved-waves-abstract-white-background.jpg?s=612x612&w=0&k=20&c=w44-q3nXf5Rncqh5OZ7yOLVKqKqYZKjrn1NX8WN_jDY=');
+ /* background-image: url('https://www.onlygfx.com/wp-content/uploads/2016/04/grunge-texture-black-and-white-1.jpg'); */
+  /* background-image: url('https://img.freepik.com/fotos-premium/mancha-verde-em-um-fundo-branco-manchas-de-tinta-em-um-pedaco-de-papel_73152-7042.jpg?w=2000');  */
+
+background-image: url('https://i.pinimg.com/736x/12/2b/bc/122bbc182f388e49c02a035fecc45ce3.jpg');  
+
+
+
+ }

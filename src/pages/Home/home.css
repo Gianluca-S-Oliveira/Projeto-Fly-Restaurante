@@ -1,0 +1,14 @@
+.img{
+   object-fit: cover;
+width: 100%;
+height: 100%;
+/* transform: rotate(50deg); */
+top: 0;
+position: absolute;
+z-index: -1; 
+filter: brightness(50%);
+}
+
+.textoo{
+   text-shadow: rgba(0, 0, 0, 0.623) 0 20px;
+}

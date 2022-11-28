@@ -16,6 +16,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    },
+
+
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
