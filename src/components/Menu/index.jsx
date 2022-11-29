@@ -18,6 +18,7 @@ function Menu() {
 
         <StaticImage
 className="logo"
+alt="logo"
 src="../../images/logo.png"
 />
       
@@ -36,7 +37,10 @@ src="../../images/logo.png"
             <a className =" mx-auto" href="#cardapio">
             <Nav.Link className ="a mr-48" href="#contato">Contato</Nav.Link>
             </a>
-            <Nav.Link  className="whats my-auto hover:animate-[wiggle_1s_ease-in-out_infinite] mx-auto" href="https://api.whatsapp.com/send?phone=5511983060031" target="blank">< BsWhatsapp/></Nav.Link>
+            <Nav.Link  
+            className="whats my-auto hover:animate-[wiggle_1s_ease-in-out_infinite] mx-auto" 
+            alt="whats"
+            href="https://api.whatsapp.com/send?phone=5511983060031"  target="blank">< BsWhatsapp/></Nav.Link>
 
             
            

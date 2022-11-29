@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useAnimation } from "framer-motion";
 import {motion} from 'framer-motion'
+
 const Comentarios = () =>{
     const {ref, inView} = useInView();
 

@@ -1,4 +1,4 @@
-import { StaticImage } from "gatsby-plugin-image";
+
 import React from "react";
 
 import { AiFillInstagram,AiFillTwitterSquare,AiFillFacebook} from "react-icons/ai"
@@ -23,7 +23,8 @@ const Footer = () =>{
   
                     </div>  
                     <div className="p-10 text-center bg-slate-900  flex flex-col align-center justify-center border-l-4 border-slate-500/50 ">
-                      <h1 className="text-4xl text-center text-white ">&copy;Contra o Filé LTDA </h1>
+                      <p className="text-5xl text-center text-white ">&copy;Contra o Filé LTDA </p>
+  
                       
                            
                      

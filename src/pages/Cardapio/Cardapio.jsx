@@ -1,5 +1,4 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { StaticImage } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
@@ -17,6 +16,7 @@ const Cardapio = () =>{
   const animation = useAnimation();
     useEffect(() =>{
       console.log("use effect", inView)
+
       if(inView){
         animation.start({
           x:0,
@@ -40,7 +40,7 @@ const Cardapio = () =>{
 
 className="lg:w-[20vw] md:min-w-[30vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Sab</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Sab</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className="text-5xl  text-white ">
 <StaticImage
@@ -51,13 +51,13 @@ src="../../images/salada.png"
 
 />
 </div>
-<h1 className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Salada</h1>
+<p className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Salada</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
   {/* ------------------------2------------------ */}
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className=" flex justify-around ">
     <input className="radio" id="saladaP"  name="options" type="radio"  />  
@@ -74,6 +74,7 @@ src="../../images/salada.png"
   </div>
 
     </div>
+
     <ReactWhatsapp number="55-11-99140-7988" message="Olá! Gostaria de uma Salada por favor!" 
     className=" w-[80%] mb-3 text-white bg-green-700 md:w-[50%] rounded-2xl  py-2 hover:bg-green-800 textos">
    Comprar
@@ -89,7 +90,7 @@ src="../../images/salada.png"
 {/* ------------------------2------------------ */}
 <Card className="lg:w-[20vw] md:min-w-[25vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Qua</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Qua</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className="text-5xl  text-white ">
 <StaticImage
@@ -100,13 +101,13 @@ src="../../images/burg.png"
 
 />
 </div>
-<h1 className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Hamburger</h1>
+<p className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Hamburger</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
 
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className=" flex justify-around ">
                 <input className="radio"  id="burgP" name="options" type="radio"   />  
@@ -137,7 +138,7 @@ src="../../images/burg.png"
 {/* ------------------------3------------------ */}
 <Card className="lg:w-[20vw] md:min-w-[25vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Qua a Sab</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Qua a Sab</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className=" ">
 <StaticImage
@@ -148,13 +149,13 @@ src="../../images/macarrao.png"
 
 />
 </div>
-<h1 className="sm:text-2xl text-[#203828] font-bold  text-center textos">Macarrao</h1>
+<p className="sm:text-2xl text-[#203828] font-bold  text-center textos">Macarrao</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
 
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className="  flex justify-around ">
                 <input className="radio"  id="macarraoP" name="options" type="radio"   />  
@@ -184,7 +185,7 @@ src="../../images/macarrao.png"
 {/* ------------------------4------------------ */}
 <Card className="lg:w-[20vw] md:min-w-[25vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Sex a Sab</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Sex a Sab</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className="text-5xl  text-white ">
 <StaticImage
@@ -195,13 +196,13 @@ src="../../images/hotdog.png"
 
 />
 </div>
-<h1 className=" sm:text-2xl text-[#203828] font-bold  text-center textos ">Hot Dog</h1>
+<p className=" sm:text-2xl text-[#203828] font-bold  text-center textos ">Hot Dog</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
 
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className=" flex justify-around ">
                 <input className="radio"  id="dogP" name="options"type="radio"   />  
@@ -231,7 +232,7 @@ src="../../images/hotdog.png"
 {/* ------------------------5------------------ */}
 <Card className="lg:w-[20vw] md:min-w-[25vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Ter a Qui</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Ter a Qui</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className="text-5xl  text-white ">
 <StaticImage
@@ -242,13 +243,13 @@ src="../../images/panqueca.png"
 
 />
 </div>
-<h1 className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Panqueca de Espinafre</h1>
+<p className=" sm:text-2xl text-[#203828] font-bold  text-center textos">Panqueca de Espinafre</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
 
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className=" flex justify-around ">
                 <input className="radio"  id="panquecaP" name="options" type="radio"  />  
@@ -278,7 +279,7 @@ src="../../images/panqueca.png"
 {/* ------------------------6------------------ */}
 <Card className="lg:max-w-[20vw] md:min-w-[25vw] sm:w-[50vw] mx-auto">
 <article className="shadow-[0_32px_10px_-0px_rgba(0,0,0,0.3)]  ">
-<h3 className="text-center text-xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Sab</h3>
+<p className="text-center text-2xl text-white font-bold bg-[#203828] rounded-b-xl">Seg a Sab</p>
 <div className="flex flex-col  h-44  items-center justify-center text-white py-7  rounded-b-3xl">
 <div className="text-5xl  text-white ">
 <StaticImage
@@ -289,13 +290,13 @@ src="../../images/pizza.png"
 
 />
 </div>
-<h1 className=" sm:text-2xl text-[#203822] font-bold  text-center textos">Pizza</h1>
+<p className=" sm:text-2xl text-[#203822] font-bold  text-center textos">Pizza</p>
 </div>
 <Card.Body className=" flex-col items-center justify-center  p-0 h-64">
 
 
 <div className="flex flex-col  h-64   items-center justify-center text-white my-20 bg-[#203828]  rounded-t-3xl">
-    <h1 className="text-white text-5xl money">20R$</h1>
+    <p className="text-white text-5xl money">20R$</p>
     <div className="text-2xl m-7">
         <div className=" flex justify-around ">
                 <input className="radio"  id="pizzaP" name="options" type="radio"  />  
